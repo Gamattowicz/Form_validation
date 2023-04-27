@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@800&family=Bitter&display=swap" rel="stylesheet">
+    <title>Form validation</title>
+    <html data-theme="retro"></html>
+  </head>
+  <body>
+    <div class="my-10 text-center">
+      <p class="text-7xl font-title font-extrabold">Form validation</p>
+    </div>
+
+    <div class="flex justify-center">
+      <div class="flex-1 mx-10">
+        <div class="form-control flex items-center justify-center">
+          <div class="flex-col w-96">
+            <div class="alert-wrapper">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-center">
+      <div class="flex-1 mx-10">
+
+        <div class="form-control flex items-center justify-center my-3">
+          <div class="flex-col w-96">
+            <label class="label">
+              <span class="label-text">Name</span>
+            </label>
+            <input type="text" placeholder="Name" id="userName" class="input input-bordered input-info w-full max-w-xs user-name" required/>
+            <!-- <div class="alert alert-error shadow-lg w-full max-w-xs mt-2">
+                <span class="text-xs">Incorrect Name. Cannot contain digits or special characters and must be at least 2 characters long.</span>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="form-control flex items-center justify-center my-3">
+          <div class="flex-col w-96">
+            <label class="label">
+              <span class="label-text">Email</span>
+            </label>
+            <input type="email" placeholder="Email" id="email" class="input input-bordered input-info w-full max-w-xs email" required/>
+            <!-- <div class="alert alert-error shadow-lg w-full max-w-xs mt-2">
+              <span class="text-xs">Incorrect Email. Must contain "@" character and the domain.</span>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="form-control flex items-center justify-center my-3">
+          <div class="flex-col w-96">
+            <label class="label">
+              <span class="label-text">Password</span>
+            </label>
+            <input type="password" placeholder="Password" id="password" class="input input-bordered input-info w-full max-w-xs password" required/>
+            <!-- <div class="alert alert-error shadow-lg w-full max-w-xs mt-2">
+              <span class="text-xs">Incorrect Password. Must contain a minimum of 8 characters, including a minimum of one capital letter, one number and one special character.</span>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="form-control flex items-center justify-center my-3">
+          <div class="flex-col w-96">
+            <label class="label">
+              <span class="label-text">Confirm</span>
+            </label>
+            <input type="password" placeholder="Confirm" id="confirmPassword" class="input input-bordered input-info w-full max-w-xs confirm" required/>
+            <!-- <div class="alert alert-error shadow-lg w-full max-w-xs mt-2">
+              <span class="text-xs">Incorrect Confirm Password. Must be the same as the password.</span>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="form-control flex items-center justify-center my-3">
+          <div class="w-96">
+            <label class="cursor-pointer label">
+              <span class="label-text">RODO</span>
+            </label>
+            <input type="checkbox" id="rodo" class="toggle toggle-info toggle-lg rodo" checked />
+            <!-- <div class="alert alert-error shadow-lg w-full max-w-xs mt-2">
+              <span class="text-xs">RODO must be accepted.</span>
+            </div> -->
+          </div>
+        </div>
+
+
+        <div class="form-control flex items-center justify-center my-3">
+          <div class="w-96">
+            <button class="btn btn-info send-button">SEND</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
