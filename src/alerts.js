@@ -40,6 +40,3 @@ function removeAlert(input) {
 }
 
 export { createAlert, createSubmitAlert, checkAlerts, addAlert, removeAlert };
-
-
-// DODAĆ NOWY DIV PRZED FORMULARZEM, KTÓRY BĘDZIE UKRYTY I JAK POJAWI SIĘ ERROR PRZY SUBMMICIE TO WTEDY ODKRYĆ I DODAC ALERT
